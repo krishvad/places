@@ -32,7 +32,7 @@ public class PlacesPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
     @Override
     public CharSequence getPageTitle(int position) {
@@ -43,8 +43,8 @@ public class PlacesPagerAdapter extends FragmentPagerAdapter {
                 return "Museums";
             case 2:
                 return "Beaches";
-            case 3:
-                return "Hiking Trails";
+//            case 3:
+//                return "Hiking Trails";
 
         }
         return null;
