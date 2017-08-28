@@ -113,6 +113,65 @@
     <string name="ca_science_ctr_contact">Phone: (323) 724-3623</string>
     <string name="ca_science_ctr_lat">34.0158653</string>
     <string name="ca_science_ctr_lng">-118.2861082</string>
+
+
+    <!--Leo Carrillo State Park-->
+    <string name="leo_c">
+            Leo Carrillo State Park offers swimming, surfing, windsurfing, surf fishing, and beachcombing. Beachgoers can explore tide pools, sea caves, and reefs. Away from shore there is a shady campground and backcountry hiking trails.
+    </string>
+    <string name="leo_c_name">Leo Carrillo State Park</string>
+    <string name="leo_c_address">35000 W Pacific Coast Highway, Malibu, CA 90265</string>
+    <string name="leo_c_contact">Phone: (310) 457-8143</string>
+    <string name="leo_c_lat">34.044444</string>
+    <string name="leo_c_lng">-118.933889</string>
+
+    <!--Muscle Beach -->
+    <string name="muscle_beach">
+            Muscle Beach refers to the exclusive Santa Monica location of the birthplace of the physical fitness boom in the US during the 20th century, started in 1934 with predominantly gymnastics activities on the south side of the Santa Monica Pier.
+    </string>
+    <string name="muscle_beach_name">Muscle Beach</string>
+    <string name="muscle_beach_address">1800 Ocean Front Walk, Venice, CA 9029</string>
+    <string name="muscle_beach_contact">Phone: (310) 399-2775</string>
+    <string name="muscle_beach_lat">33.9854323</string>
+    <string name="muscle_beach_lng">-118.4727025</string>
+
+    <!--Dockweiler Beach -->
+    <string name="dockweiler_beach">
+    Dockweiler State Beach is a beach in Los Angeles, California, with 3.75 miles of shoreline and a hang gliding practice and training area.    </string>
+    <string name="dockweiler_beach_name">Dockweiler State Beach </string>
+    <string name="dockweiler_beach_address">12001 Vista Del Mar, Playa Del Rey, CA 90293</string>
+    <string name="dockweiler_beach_contact">Phone: (424) 526-7777</string>
+    <string name="dockweiler_beach_lat">33.9308251</string>
+    <string name="dockweiler_beach_lng">-118.5051035</string>
+
+
+    <!--Venice beach -->
+    <string name="venice_beach">
+    This well-known, beachfront destination is home to an array of street performers and funky shops.    </string>
+    <string name="venice_beach_name">Venice Beach </string>
+    <string name="venice_beach_address">Venice Fishing Pier, Venice, CA 90292</string>
+    <string name="venice_beach_contact">Phone: (310) 396-6794</string>
+    <string name="venice_beach_lat">33.9782453</string>
+    <string name="venice_beach_lng">-118.5366945</string>
+
+    <!--Marina beach -->
+    <string name="marina_beach">
+    Playground, picnic tables and other kid-friendly attractions at a surf-free sheltered beach.    </string>
+    <string name="marina_beach_name">Marina Beach (Mother\'s Beach)</string>
+    <string name="marina_beach_address">4135 Admiralty Way, Marina Del Rey, CA 90292</string>
+    <string name="marina_beach_contact">Phone: (424) 526-7777</string>
+    <string name="marina_beach_lat">33.9815937</string>
+    <string name="marina_beach_lng">-118.5281543</string>
+
+    <!--Will Rogers State Beach -->
+    <string name="will_rogers_beach">
+    Will Rogers State Beach is a beach park on the Santa Monica Bay, at the Pacific coast of Southern California </string>
+    <string name="will_rogers_beach_name">Will Rogers State Beach</string>
+    <string name="will_rogers_beach_address">17000 Pacific Coast Hwy, Pacific Palisades, CA 90272</string>
+    <string name="will_rogers_beach_contact">Phone: (424) 526-7777</string>
+    <string name="will_rogers_beach_lat">34.0375209</string>
+    <string name="will_rogers_beach_lng">-118.6117521</string>
+
 </resources>
 
 

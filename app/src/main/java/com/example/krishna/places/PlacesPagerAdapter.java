@@ -41,7 +41,7 @@ public class PlacesPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return "Museums";
             case 2:
-                return "Night Life";
+                return "Beaches";
             case 3:
                 return "Hiking Trails";
 
