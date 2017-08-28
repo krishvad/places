@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.krishna.fragments.AttractionsFragment;
+import com.example.krishna.fragments.BeachesFragment;
 import com.example.krishna.fragments.MuseumsFragment;
 
 public class PlacesPagerAdapter extends FragmentPagerAdapter {
@@ -21,7 +22,7 @@ public class PlacesPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new MuseumsFragment();
             case 2:
-                return new AttractionsFragment();
+                return new BeachesFragment();
             case 3:
                 return new AttractionsFragment();
             default:

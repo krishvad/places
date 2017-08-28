@@ -37,7 +37,7 @@ public class BeachesFragment extends Fragment {
 
         places.add (new Places (
                 R.drawable.muscle_beach, R.string.muscle_beach_name,
-                R.string.marina_beach_about, R.string.muscle_beach_address,
+                R.string.muscle_beach_about, R.string.muscle_beach_address,
                 R.string.muscle_beach_contact, R.string.muscle_beach_lat, R.string.muscle_beach_lng));
 
         places.add (new Places (
