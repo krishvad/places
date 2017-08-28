@@ -31,34 +31,34 @@ public class BeachesFragment extends Fragment {
         final ArrayList<Places> places = new ArrayList<Places>();
 
         places.add (new Places (
-                R.drawable.leo_c, R.string.leo_c_name,
-                R.string.leo_c_address, R.string.leo_c_contact,
-                R.string.leo_c_lat, R.string.leo_c_lng));
+                R.drawable.leo_c_beach, R.string.leo_c_beach_name,
+                R.string.leo_c_beach_about, R.string.leo_c_beach_address,
+                R.string.leo_c_beach_contact, R.string.leo_c_beach_lat, R.string.leo_c_beach_lng));
 
         places.add (new Places (
                 R.drawable.muscle_beach, R.string.muscle_beach_name,
-                R.string.muscle_beach_address, R.string.muscle_beach_contact,
-                R.string.muscle_beach_lat, R.string.muscle_beach_lng));
+                R.string.marina_beach_about, R.string.muscle_beach_address,
+                R.string.muscle_beach_contact, R.string.muscle_beach_lat, R.string.muscle_beach_lng));
 
         places.add (new Places (
                 R.drawable.dockweiler_beach, R.string.dockweiler_beach_name,
-                R.string.dockweiler_beach_address, R.string.dockweiler_beach_contact,
-                R.string.dockweiler_beach_lat, R.string.dockweiler_beach_lng));
+                R.string.dockweiler_beach_about, R.string.dockweiler_beach_address,
+                R.string.dockweiler_beach_contact, R.string.dockweiler_beach_lat, R.string.dockweiler_beach_lng));
 
         places.add (new Places (
                 R.drawable.venice_beach, R.string.venice_beach_name,
-                R.string.venice_beach_address, R.string.venice_beach_contact,
-                R.string.venice_beach_lat, R.string.venice_beach_lng));
+                R.string.venice_beach_about, R.string.venice_beach_address,
+                R.string.venice_beach_contact, R.string.venice_beach_lat, R.string.venice_beach_lng));
 
         places.add (new Places (
                 R.drawable.marina_beach, R.string.marina_beach_name,
-                R.string.marina_beach_address, R.string.marina_beach_contact,
-                R.string.marina_beach_lat, R.string.marina_beach_lng));
+                R.string.marina_beach_about, R.string.marina_beach_address,
+                R.string.marina_beach_contact, R.string.marina_beach_lat, R.string.marina_beach_lng));
 
         places.add (new Places (
                 R.drawable.will_rogers_beach, R.string.will_rogers_beach_name,
-                R.string.will_rogers_beach_address, R.string.will_rogers_beach_contact,
-                R.string.will_rogers_beach_lat, R.string.will_rogers_beach_lng));
+                R.string.will_rogers_beach_about, R.string.will_rogers_beach_address,
+                R.string.will_rogers_beach_contact, R.string.will_rogers_beach_lat, R.string.will_rogers_beach_lng));
 
         PlacesAdapter placesAdapter = new PlacesAdapter(getActivity(), places);
         final GridView gridView = (GridView) rootView.findViewById(R.id.grid_view);
