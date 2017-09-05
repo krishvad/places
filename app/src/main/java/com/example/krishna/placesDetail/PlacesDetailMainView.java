@@ -19,7 +19,7 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
     private GoogleMap mMap;
     private String mPlaceName;
     private String mPlaceAbout;
-    private String mPlaceContact;
+    private String[] mPlaceContact;
     private String mPlaceAddress;
     private double mPlacelat;
     private double mPlaceLng;
@@ -30,11 +30,19 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
         super.onCreate(savedInstanceState);
         setContentView(R.layout.places_detail);
 
-        //getActionBar().setDisplayHomeAsUpEnabled(true);
         getExtraValues(getIntent());
-        ((TextView) findViewById(R.id.about)).setText(mPlaceAbout);
-        ((TextView) findViewById(R.id.contact)).setText(mPlaceContact);
-        ((TextView) findViewById(R.id.address)).setText(mPlaceAddress);
+        ((TextView) findViewById(R.id.about)).setText(
+                mPlaceAbout != null ? mPlaceAbout : "No info found");
+        if (mPlaceContact.length == 2) {
+            ((TextView) findViewById(R.id.contactPhone)).setText(
+                    mPlaceContact[0] != null ? mPlaceContact[0] : "No contact phone found");
+            ((TextView) findViewById(R.id.contactUrl)).setText(
+                    mPlaceContact[0] != null ? mPlaceContact[1] : "No web address found");
+        } else {
+            ((TextView) findViewById(R.id.contactPhone)).setText("No contact or web address found");
+        }
+        ((TextView) findViewById(R.id.address)).setText(
+                mPlaceAddress != null ? mPlaceAddress : "No Address found");
 
         MapFragment mapFragment = (MapFragment) getFragmentManager()
                 .findFragmentById(R.id.map);
@@ -53,7 +61,8 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
     private void getExtraValues (Intent intent) {
         mPlaceName = intent.getStringExtra("name");
         mPlaceAddress = intent.getStringExtra("address");
-        mPlaceContact = intent.getStringExtra("contact");
+        mPlaceContact = intent.getStringExtra("contact").split("_");
+
         mPlaceAbout = intent.getStringExtra("about");
         mPlacelat = Double.parseDouble(intent.getStringExtra("latitude"));
         mPlaceLng = Double.parseDouble(intent.getStringExtra("longitude"));
