@@ -74,6 +74,7 @@ public class AttractionsFragment extends Fragment {
                 intent.putExtra("contact", getString(place.getPlaceContact()));
                 intent.putExtra("latitude", getString(place.getPlaceLatitude()));
                 intent.putExtra("longitude", getString(place.getPlaceLongitude()));
+                intent.putExtra("primaryColor", "#3F51B5");
                 startActivity(intent);
             }
         });

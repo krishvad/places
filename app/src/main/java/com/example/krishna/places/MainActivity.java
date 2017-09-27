@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity{
 
         // set toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         //Set tabs
         mViewPager = (ViewPager) findViewById(R.id.container);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity{
 
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
         tabs.setupWithViewPager(mViewPager);
+
     }
 
 }
