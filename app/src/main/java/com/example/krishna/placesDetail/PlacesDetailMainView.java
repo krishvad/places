@@ -82,7 +82,7 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
         mPlaceLatitude = Double.parseDouble(intent.getStringExtra("latitude"));
         mPlaceLng = Double.parseDouble(intent.getStringExtra("longitude"));
         mPrimaryColor = intent.getStringExtra("primaryColor");
-        mLogo = Integer.parseInt(intent.getStringExtra("toolbar_logo"));
+        mLogo = intent.getIntExtra("toolbar_logo", 0000);
         Log.v("Logo is", "M logo is: "+mLogo);
 
 
