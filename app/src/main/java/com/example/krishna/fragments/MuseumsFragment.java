@@ -80,6 +80,7 @@ public class MuseumsFragment extends Fragment {
                 intent.putExtra("contact", getString(place.getPlaceContact()));
                 intent.putExtra("latitude", getString(place.getPlaceLatitude()));
                 intent.putExtra("longitude", getString(place.getPlaceLongitude()));
+                intent.putExtra("toolbar_logo", getString(place.getPlaceImage()));
                 startActivity(intent);
             }
         });

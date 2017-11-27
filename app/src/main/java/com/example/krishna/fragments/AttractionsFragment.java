@@ -75,6 +75,9 @@ public class AttractionsFragment extends Fragment {
                 intent.putExtra("latitude", getString(place.getPlaceLatitude()));
                 intent.putExtra("longitude", getString(place.getPlaceLongitude()));
                 intent.putExtra("primaryColor", "#3F51B5");
+                Log.v ("Place image is", "place image: " + place.getPlaceImage());
+                intent.putExtra("toolbar_logo", (place.getPlaceImage()));
+
                 startActivity(intent);
             }
         });

@@ -2,8 +2,6 @@ package com.example.krishna.placesDetail;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -29,6 +27,7 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
     private double mPlaceLatitude;
     private double mPlaceLng;
     private String mPrimaryColor;
+    private int mLogo;
 
 
     @Override
@@ -40,22 +39,13 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.places_detail);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar == null) {
-            Log.d ("action", "action bar is null");
-        }
-        actionBar.setBackgroundDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.universal, null));
-
-//        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(2,2);
-//        layoutParams.gravity= Gravity.TOP;
-//        view.setLayoutParams(layoutParams);
-//        actionBar.se
-        // actionBar.setBackgroundDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.ca_science_center, null));
-
         getExtraValues(getIntent());
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         ((TextView) findViewById(R.id.about)).setText(
                 mPlaceAbout != null ? mPlaceAbout : "No info found");
         if (mPlaceContact.length == 2) {
@@ -92,6 +82,9 @@ public class PlacesDetailMainView extends AppCompatActivity implements OnMapRead
         mPlaceLatitude = Double.parseDouble(intent.getStringExtra("latitude"));
         mPlaceLng = Double.parseDouble(intent.getStringExtra("longitude"));
         mPrimaryColor = intent.getStringExtra("primaryColor");
+        mLogo = Integer.parseInt(intent.getStringExtra("toolbar_logo"));
+        Log.v("Logo is", "M logo is: "+mLogo);
+
 
 
     }
